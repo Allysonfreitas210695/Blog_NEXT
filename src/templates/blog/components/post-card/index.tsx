@@ -32,12 +32,12 @@ export const PostCard = ({
       <div className="p-2 rounded-md overflow-hidden">
         <div className="relative">
           <div className="absolute top-0 right-0 px-3 py-1">
-            <span className="text-body-xs text-gray-300">{date}</span>
+            <span className="text-body-xs text-gray-300">{new Date(date).toLocaleDateString("pt-BR")}</span>
           </div>
 
           <Image
             src={image}
-            alt=""
+            alt={title}
             width={288}
             height={144}
             className="w-full h-40 object-cover object-center rounded-t-[8px]"
